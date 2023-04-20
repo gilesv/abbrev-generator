@@ -22,7 +22,7 @@ async function getInput() {
 }
 
 function words(txt) {
-    return [...new Set(txt.match(/[A-zÀ-ú\-]+/g))];
+    return [...new Set(txt.match(/[A-zÀ-ú0-9\-]+/g))];
 }
 
 function isAbbrev(word) {
